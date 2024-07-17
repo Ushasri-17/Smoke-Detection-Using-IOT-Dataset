@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+</head>
+<style>
+      body{
+        background-image: url('../static/assets/predict.jpg');
+        background-size: 1540px 720px;
+        color: white;
+      }
+      .container{
+        display: grid;
+        justify-content: space-between;
+      }
+      .navbar{
+        background-color: white;
+      }
+      *{
+        text-decoration: none;
+      }
+</style>
+<body>
+  <form action="{{url_for('submit')}}" method="post"> 
+<div class="container">
+     <nav class="navbar">
+      <button onclick="myFunction()"><a href={{url_for('home')}}>Home</a></button>
+    </nav>
+     <h2>Smoke Detection Prediction</h2>
+     <label>Temperature[C]</label>
+     <input type="text" name="Temperature[C]" placeholder="Temperature[C]">
+     </br>
+     <label>Humidity[%]</label>
+     <input type="text" name="Humidity[%]" placeholder="Humidity[%]">
+     </br>
+     <label>TVOC[ppb]</label>
+     <input type="text" name="TVOC[ppb]" placeholder="TVOC[ppb]">
+     </br>
+     <label>eCO2[ppm]</label>
+     <input type="text" name="eCO2[ppm]" placeholder="eCO2[ppm]">
+     </br>
+     <label>Raw H2</label>
+     <input type="text" name="Raw H2" placeholder="Raw H2">
+     </br>
+     <label>Pressure[hPa]</label>
+     <input type="text" name="Pressure[hPa]" placeholder="Pressure[hPa]">
+     </br>
+     <label>PM2.5</label>
+     <input type="text" name="PM2.5" placeholder="PM2.5">
+     </br>
+     <label>NC0.5</label>
+     <input type="text" name="NC0.5" placeholder="NC0.5">
+     </br>
+     <label>NC2.5</label>
+     <input type="text" name="NC2.5" placeholder="NC2.5">
+     </br>
+     <label>CNT</label>
+     <input type="text" name="CNT" placeholder="CNT">
+    </br>
+     <button onclick="myFunction()"
+    style="height: 30px; width: 100px; background-color: green; color: white;">Submit</button>
+</div>
+</form>
+</body>
+</html>

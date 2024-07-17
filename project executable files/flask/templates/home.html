@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoke Detection</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+        margin: auto;
+        font-size: large;
+        color: white;
+        margin-top: 100px;
+        }
+    body{
+        background-image: url('../static/assets/smoke.jpeg');
+        background-size: 1540px 700px;
+        }
+       *{
+        text-decoration: none;
+        color: black;
+        }
+
+</style>
+<body>
+    <div class="container">
+    <h2>SMOKE DETECTOR PREDICTION</h2>
+    <p>Welcome to our website dedicated to proactively predicting smoke hazards using machine learning.</br>
+    Our state-of-the-art smoke detectors are designed to enhance safety in homes and businesses by </br>
+    accurately detecting smoke early on.</p>
+    </br>
+    </br>
+    <button onclick="myFunction()"
+    style="height: 30px; width: 100px"><a href="{{url_for('predict')}}">Predict</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+</head>
+<style>
+    body{
+        background-image: url('../static/assets/predict.jpg');
+        background-size: 1540px 720px;
+        color: white;
+    }
+    h1,h3{
+        text-align: center;
+        margin: auto;
+        margin-top: 100px;
+    }
+    button{
+        float: right;
+        margin-top: 30px;
+    }
+    .top-right{
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+    *{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+<body>
+    <h1>Smoke Detector Prediction</h1>
+     <h3>The input indicates smoke detection.</h3>
+     <div class="top-right">
+        <form action="{{url_for('home')}}"> <button type="submit"
+            style="height: 30px; width: 100px; background-color: blue; color: white;">Home</button>
+       </form>   <form action="{{url_for('predict')}}">     <button type="submit" style="height: 30px; width: 100px; background-color: green; color: white;">Predict</button>
+       </form> 
+</body>
+</html>
